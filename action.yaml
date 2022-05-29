@@ -1,0 +1,14 @@
+name: 'container action'
+description: 'my first container action'
+author: 'Shivam Gupta'
+inputs:
+  myInput:
+    description: 'greeting to use'
+    required: true
+    default: 'Welcome Forks'
+outputs:
+  myOutput:
+    description: 'total memory'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
